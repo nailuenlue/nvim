@@ -46,9 +46,6 @@ return packer.startup(function()
   -- icons
   use 'kyazdani42/nvim-web-devicons'
 
-  -- tagviewer
-  use 'liuchengxu/vista.vim'
-
   --  toggleterm
   use {"akinsho/toggleterm.nvim"}
 
