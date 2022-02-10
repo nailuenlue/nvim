@@ -58,7 +58,7 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -----------------------------------------------------------
 opt.termguicolors = true
 vim.o.background  =  "dark"
--- cmd([[colorscheme nightbox]])
+cmd([[colorscheme nightfox]])
 
 -----------------------------------------------------------
 -- Tabs, indent

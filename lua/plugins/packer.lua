@@ -57,7 +57,7 @@ return packer.startup(function()
 
   -- colorschemes
   --  use { "ellisonleao/gruvbox.nvim" }
-  use 'EdenEast/nightfox'
+  use 'EdenEast/nightfox.nvim'
 
   -- LSP
   use 'neovim/nvim-lspconfig'
@@ -75,9 +75,16 @@ return packer.startup(function()
   }
 
   -- statusline
+  -- use {
+  --  'famiu/feline.nvim',
+  --  requires = { 'kyazdani42/nvim-web-devicons' },
+  -- }
   use {
-    'famiu/feline.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons' },
+  'nvim-lualine/lualine.nvim',
+     requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+     config = function()
+       require('lualine').setup()
+     end
   }
 
   -- git labels
